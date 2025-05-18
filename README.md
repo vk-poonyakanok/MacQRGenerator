@@ -2,6 +2,13 @@
 
 A Python/Tkinter GUI for macOS to generate customizable QR codes.
 
+## Get the code
+
+```bash
+git clone https://github.com/vk-poonyakanok/MacQRGenerator.git
+cd MacQRGenerator
+```
+
 ## Requirements
 
 - Python 3.8+
@@ -28,11 +35,11 @@ We use PyInstaller:
 
 ```bash
 pip install pyinstaller
-# One-time: generate spec (already included here)
-pyinstaller --windowed --name MacQRGenerator --icon icon.icns qr_gui.py
+```
 
-# Or reproducibly via the spec:
-pyinstaller qr_gui.spec
+### One-time: generate spec (already included here)
+```
+pyinstaller --windowed --name MacQRGenerator --icon icon.icns qr_gui.py
 ```
 
 The built app is in `dist/MacQRGenerator.app`. Double-click the `.app` to run.
